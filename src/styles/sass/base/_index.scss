@@ -1,0 +1,24 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px 100px;
+    @media (max-width: 375px) {
+        margin: 20px;
+    }
+}
+
+button {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

@@ -6,6 +6,8 @@ import Survey from './pages/Survey/'
 import Header from './components/Header'
 import Error from './components/Error'
 
+import './styles/sass/main.scss';
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
