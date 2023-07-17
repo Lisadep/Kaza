@@ -1,0 +1,19 @@
+.footer {
+    background-color: #000000; // <- $tertiary-color
+    height: 209px;
+
+    &__logo {
+        display: flex;
+        margin: auto;
+        width: 122px;
+        height: 40px;
+        padding-top: 66px;
+    }
+
+    &__copyright {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+    }
+}
