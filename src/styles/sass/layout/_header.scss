@@ -3,14 +3,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 50px 100px;
-    @media (max-width: 375px) {
-        margin: 20px;
-    }
+    // @media (min-width: 375px) {
+    //     margin: 20px;
+    // }
 
     &__logo {
         width: 210px;
         height: 68px;
-        @media(max-width: 375px){
+        @media(min-width: 375px){
             width: 145px;
             height: 47px;
         }
@@ -19,7 +19,7 @@
     &__list {
         display: flex;
         gap: 57px;
-        @media(max-width: 375px){
+        @media(min-width: 375px){
             gap: 26px;
         }
         a {
