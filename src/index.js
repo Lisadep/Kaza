@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/home'
 import About from './pages/about'
+import Accomodation from './pages/accomodation'
+import Error from './pages/error'
 import Header from './components/header'
 import Footer from './components/footer'
-import Error from './components/error'
 
 import './styles/sass/main.scss';
 
@@ -19,6 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/accomodation/:id" element={<Accomodation />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

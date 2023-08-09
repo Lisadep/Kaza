@@ -3,9 +3,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 50px 100px;
-    // @media (min-width: 375px) {
-    //     margin: 20px;
-    // }
 
     &__logo {
         width: 210px;
@@ -23,7 +20,11 @@
             gap: 26px;
         }
         a {
-            color: #FF6060;   // -> $primary-color
+            color: $primary-color;
+
+            &.active {
+                border-bottom: 1.5px solid $primary-color;
+            }
         }
     }
 }

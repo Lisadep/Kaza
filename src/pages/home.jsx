@@ -1,6 +1,6 @@
 import Banner from '../components/banner'
 import Card from '../components/card'
-import Data from '../datas/apartments.json'
+import Data from '../datas/accomodations.json'
 
 function Home() {
   return <>
