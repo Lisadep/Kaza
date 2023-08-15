@@ -4,7 +4,7 @@ import img from '../assets/about-banner.png'
 
 function About() {
     return (
-        <div>
+        <div className='collapses'>
             < Banner image={img}/>
             <Collapse
                 title="Fiabilité"

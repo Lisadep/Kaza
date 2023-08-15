@@ -5,7 +5,7 @@ const Rating = ({ rating }) => {
     const stars = [1, 2, 3, 4, 5];
 
     return (
-      <div>
+      <div className="stars">
       {stars.map((star) => rating >= star ? (
           <img src={full_star} alt="Note du logement" />
           ) : (

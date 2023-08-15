@@ -4,6 +4,22 @@
     align-items: center;
     gap: 139px;
     margin: 110px 0;
+
+    @media (max-width: 768px) {
+        > img {
+            width: 198px;
+        }
+    } 
+    
+    > h2 {
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            margin: 0 57px 0 57px;
+            font-weight: 500;
+        }
+    }
 }
 
 .error > *{
@@ -13,4 +29,8 @@
 .error a {
     text-decoration: underline;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
 }

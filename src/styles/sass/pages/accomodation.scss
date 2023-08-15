@@ -2,6 +2,10 @@
     color: $primary-color;
     margin: 30px 100px;
 
+        @media (max-width: 768px) {
+            margin: 20px 20px 0 20px;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;
@@ -11,11 +15,24 @@
             font-size: 36px;
             font-weight: 500;
             margin-bottom: 5px;
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+            }
         }
 
         * p {
             font-size: 18px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
         }
+    }
+
+    &__rating {
+        display: flex;
     }
 
     &__host {
@@ -29,11 +46,28 @@
             font-weight: 500;
             align-items: center;
             display: flex;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                width: 47px;
+            }
         }
     
         > img {
         border-radius: 50%;
         width: 64px;
+
+            @media (max-width: 768px) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            position: relative;
+            top: 75px;
+            left: 75px;
+            align-items: center;
         }
     }
 
@@ -42,16 +76,36 @@
         justify-content: space-between;
         margin: 20px 0 30px;
 
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0;
+            display: flex;
+            gap: 24px;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
         > ul {
             display: flex;
             gap: 10px;
             font-size: 14px;
+
+            @media (max-width: 768px) {
+                width: 84px;
+                height: 18px;
+                border-radius: 10px;
+            }
             
             > li {
                 color: white;
                 background-color: $primary-color;
                 border-radius: 10px;
                 padding: 3px 30px;
+
+                @media (max-width: 768px) {
+                    font-size: 10px;
+                    padding: 2px 20px;
+                }
             }
         }
     }

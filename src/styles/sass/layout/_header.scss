@@ -4,26 +4,38 @@
     align-items: center;
     margin: 50px 100px;
 
+    @media (max-width: 768px) {
+        margin: 20px;
+    }
+
     &__logo {
         width: 210px;
         height: 68px;
-        @media(min-width: 375px){
+        @media (max-width: 768px) {
             width: 145px;
-            height: 47px;
+            height: 46px;
         }
     }
 
     &__list {
         display: flex;
         gap: 57px;
-        @media(min-width: 375px){
+        font-size: 24px;
+        @media(max-width: 768px){
             gap: 26px;
+            text-transform: uppercase;
+            font-size: 12px;
         }
+
         a {
             color: $primary-color;
 
             &.active {
                 border-bottom: 1.5px solid $primary-color;
+            }
+
+            @media(max-width: 768px){
+                font-size: 12px;
             }
         }
     }

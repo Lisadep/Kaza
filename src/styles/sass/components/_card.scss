@@ -6,12 +6,24 @@
     background-color: $secondary-color;
     border-radius: 25px;
     padding: 50px 50px;
+    margin-top: 43px;
+    margin-bottom: 50px;
+
     @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
+        margin: 22px 20px 27px 20px;
+        background-color: white;
+        padding: 0;
+        gap: 20px;
     }
+}
+
+.cards > a {
+    display: grid;
+    gap: 50px 60px;
 }
 
 .card {
