@@ -1,6 +1,8 @@
 import data from '../datas/accomodations.json'
 import { useParams } from 'react-router-dom'
 import Collapse from '../components/collapse';
+import Slideshow from '../components/slideshow';
+import Rating from '../components/rating'
 
 function Accomodation() {
     const {id} = useParams()
@@ -8,6 +10,7 @@ function Accomodation() {
 
     return (
         <section className='accomodation'>
+            <Slideshow images = {accomodation.pictures}/>
             <div className='accomodation__header'>
                 <div>
                     <h2>{accomodation.title}</h2>
@@ -27,7 +30,7 @@ function Accomodation() {
                     ))}
                 </ul>
                 <ul>
-                    {accomodation.rating}
+                    <Rating rating = {accomodation.rating} />
                 </ul>
             </div>
             <div className='collapse__accomodation'>
