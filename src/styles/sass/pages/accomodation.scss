@@ -37,6 +37,7 @@
 
     &__host {
         display: flex;
+        align-items: center;
         width: 167px;
         text-align: end;
         gap: 10px;
@@ -56,6 +57,7 @@
         > img {
         border-radius: 50%;
         width: 64px;
+        height: 64px;
 
             @media (max-width: 768px) {
                 width: 32px;
