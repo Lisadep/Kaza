@@ -4,7 +4,9 @@ function Card({card}) {
     return (
         <Link to={"/accomodation/" + card.id}>
             <article className="card" key={card.id}>
+                <div>
                 <img className="card__cover" src={card.cover} alt={card.title} />
+                </div>
                 <p>{card.title}</p>
             </article>
         </Link>

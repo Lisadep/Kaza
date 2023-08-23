@@ -1,5 +1,5 @@
 import data from '../datas/accomodations.json'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import Collapse from '../components/collapse';
 import Slideshow from '../components/slideshow';
 import Rating from '../components/rating'
@@ -7,6 +7,7 @@ import Rating from '../components/rating'
 function Accomodation() {
     const {id} = useParams()
     const accomodation = data.find((accomodation) => accomodation.id === id)
+    if (!accomodation) { return <Navigate to="404" /> }
 
     return (
         <section className='accomodation'>
