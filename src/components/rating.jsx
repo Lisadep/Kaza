@@ -6,10 +6,10 @@ const Rating = ({ rating }) => {
 
     return (
       <div className="stars">
-      {stars.map((star) => rating >= star ? (
-          <img src={full_star} alt="Note du logement" />
+      {stars.map((star, index) => rating >= star ? (
+          <img key={index} src={full_star} alt="Note du logement" />
           ) : (
-          <img src={empty_star} alt="Note du logement" />
+          <img key={index} src={empty_star} alt="Note du logement" />
           )
       )}
       </div>

@@ -1,5 +1,5 @@
 import data from '../datas/accomodations.json'
-import { Navigate, useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Collapse from '../components/collapse';
 import Slideshow from '../components/slideshow';
 import Rating from '../components/rating'
